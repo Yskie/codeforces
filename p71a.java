@@ -18,6 +18,6 @@ public class p71a {
                 System.out.println(w);
             }
         }
-
+        br.close();
     }
 }

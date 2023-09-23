@@ -19,6 +19,6 @@ public class p4a {
         } else {
             System.out.println("NO");
         }
-        
+        br.close();
     }
 }

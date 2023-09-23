@@ -41,7 +41,7 @@ public class p1a {
                 output = mF * nF + mF + nF + 1;
             }
         }
-
         System.out.println(output);
+        br.close();
     }
 }

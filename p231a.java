@@ -16,6 +16,6 @@ public class p231a {
             }
         }
         System.out.println(count);
-    
+        br.close();
     }
 }
