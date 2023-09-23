@@ -16,9 +16,8 @@ public class p4a {
                 System.out.println("NO");
             }
 
-        } else {
-            System.out.println("NO");
-        }
+        } else System.out.println("NO");
+        
         br.close();
     }
 }

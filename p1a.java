@@ -13,8 +13,7 @@ public class p1a {
         long output = 0;
 
         if (m <= a && n <= a) {
-            //Do based on n.
-            output = 1L;
+            output = 1;
         } else if (m <= a) {
             if (n % a == 0) {
                 output += n / a;

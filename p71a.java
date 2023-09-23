@@ -14,9 +14,8 @@ public class p71a {
                 out.print(w.charAt(len - 1));
                 out.print("\n");
                 out.flush();
-            } else {
-                System.out.println(w);
-            }
+            } else System.out.println(w);
+            
         }
         br.close();
     }

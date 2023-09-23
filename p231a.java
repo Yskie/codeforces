@@ -6,7 +6,6 @@ public class p231a {
         public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int l = Integer.parseInt(br.readLine());
-
         int count = 0;
         for (int i = 0; i < l; i++) {
             String[] iA = br.readLine().split(" ");
