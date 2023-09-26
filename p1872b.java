@@ -22,7 +22,7 @@ public class p1872b {
                 a.add(new Pair(d, s));
             }
 
-            a.sort(Comparator.comparing(Pair::getHead));
+            a.sort(Comparator.comparing(Pair::getHead).thenComparing(Pair::getTail));
 
 
             for (int j = 0; j < a.size(); j++) {
@@ -37,7 +37,6 @@ public class p1872b {
 
                 if (s <= 2) {
                     roomsToExplore = 0;
-                    break;
                 } else {
                     //Tablute the rooms to explore.
                     int pr = (s - 1) / 2;
@@ -45,6 +44,7 @@ public class p1872b {
                 }
             }
             System.out.println(roomsExplored + roomsToExplore);
+
         }
     }
 
