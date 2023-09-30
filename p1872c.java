@@ -15,22 +15,12 @@ public class p1872c {
             int s1 = Integer.parseInt(s[0]);
             int s2 = Integer.parseInt(s[1]);
 
-            if (s2 <= 3) {
-
-            } else if (s1 % 2 == 0 && s1 != 2) {
-                results1 = 2;
-                results2 = s1 - 2;
-            } else if (s2 % 2 == 0 && s2 != 2) {
-                results1 = 2;
-                results2 = s2 - 2;
-            } else {
-                for (int j = s1; j <= s2; j++) {
-                    int check = isPrime(j);
-                    if (check != -1) {
-                        results1 = check;
-                        results2 = j - check;
-                        break;
-                    }
+            for (int j = s1; j <= s2; j++) {
+                int check = minDivisor(j);
+                if (check != j) {
+                    results1 = check;
+                    results2 = j - check;
+                    break;
                 }
             }
 
@@ -44,16 +34,12 @@ public class p1872c {
 
     }
 
-    static int isPrime(int num) {
-        if (num == 1) {
-            return -1;
-        }
-
-        for (int i = 2; i <= num / 2; i++) {
-            if ((num % i) == 0) {
+    static int minDivisor(int num) {
+        for (int i = 2; i < Math.round(Math.pow(num, 0.5)) + 1; i++) {
+            if (num % i == 0) {
                 return i;
             }
         }
-        return -1;
+        return num;
     }
 }

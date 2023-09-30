@@ -19,7 +19,5 @@ public class p339a {
             out.print(results[i]);
             out.flush();
         }
-    
-        
     }
 }
