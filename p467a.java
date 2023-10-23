@@ -8,7 +8,7 @@ public class p467a {
         int e = 0;
         for (int i = 0; i < l; i++) {
             String[] s = br.readLine().split(" ");
-            if (Integer.parseInt(s[1]) > Integer.parseInt(s[0])) {
+            if (Integer.parseInt(s[1]) > (Integer.parseInt(s[0]) + 1)) {
                 e++;
             }
 
