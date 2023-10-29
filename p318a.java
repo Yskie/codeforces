@@ -5,12 +5,12 @@ public class p318a {
         PrintWriter out = new PrintWriter(System.out);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] l = br.readLine().split(" ");
-        int l1 = Integer.parseInt(l[0]);
-        int l2 = Integer.parseInt(l[1]);
+        long l1 = Long.parseLong(l[0]);
+        long l2 = Long.parseLong(l[1]);
 
-        int count = 0;
+        long count = 0;
 
-        for (int i = 1; i <= l1; i = i + 2) {
+        for (long i = 1; i <= l1; i = i + 2) {
             count++;
             
             if (count == l2) {
@@ -20,8 +20,7 @@ public class p318a {
             }
         }
 
-
-        for (int i = 2; i <= l1; i = i + 2) {
+        for (long i = 2; i <= l1; i = i + 2) {
             count++;
             if (count == l2) {
                 out.println(i);
@@ -30,7 +29,7 @@ public class p318a {
             }
         }
 
-
+        System.out.println(count);
 
         
     }   
