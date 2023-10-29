@@ -8,8 +8,6 @@ public class p318a {
         long l1 = Long.parseLong(l[0]);
         long l2 = Long.parseLong(l[1]);
 
-        long count = 0;
-        boolean runOdd = true;
         long mid;
 
         if (l1 % 2 == 0) {
@@ -19,34 +17,14 @@ public class p318a {
         }
 
         if (l2 > mid) {
-            count = mid;
-            runOdd = false;
-        }
-
-        if (runOdd) {
-
-        for (long i = 1; i <= l1; i = i + 2) {
-            count++;
-            
-            if (count == l2) {
-                out.println(i);
-                out.flush();
-                System.exit(0);
-            }
-        }
+            //Even
+            long neww = l2 - mid;
+            out.println(neww * 2);
         } else {
-
-        for (long i = 2; i <= l1; i = i + 2) {
-            count++;
-            if (count == l2) {
-                out.println(i);
-                out.flush();
-                System.exit(0);
-            }
-        }
+            out.println(l2 * 2 - 1);
         }
 
+        out.flush();
 
-        
-    }   
+    }
 }
