@@ -15,7 +15,6 @@ public class p96a {
                 is0 = !is0;
                 count = 1;
             }
-
             if (count == 7) {
                 break;
             }
