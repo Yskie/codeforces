@@ -13,7 +13,6 @@ public class p405a {
         }
         Arrays.sort(arr);
         for (int i = 0; i < arr.length; i++) {
-
             out.print(String.valueOf(arr[i]) + " ");
 
         }
