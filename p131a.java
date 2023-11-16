@@ -29,11 +29,9 @@ public class p131a {
                     out.print(ss[i].toUpperCase());
                 }
             }
-
         } else {
             out.print(s);
         }
-
         out.flush();
     }
 }
