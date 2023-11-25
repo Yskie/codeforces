@@ -9,7 +9,7 @@ public class p427a {
         int curr = 0;
         int output = 0;
         for (int i = 0; i < l; i++) {
-            int s1 = Integer.parseInt(s[i]);
+            int s1 = Integer.parseInt(s[i]);    
             if (s1 > 0) {
                 if (s1 > 10) {
                     s1 = 10;
