@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class p541a {
+public class p451a {
     public static void main(String[] args) throws IOException {
         PrintWriter out = new PrintWriter(System.out);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -13,7 +13,7 @@ public class p541a {
         if (min % 2 == 0) {
             out.println("Malvika");
         } else {
-            out.printlin("Akshat");
+            out.println("Akshat");
         }
         
         out.flush();
