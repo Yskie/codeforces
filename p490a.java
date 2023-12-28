@@ -12,21 +12,19 @@ public class p490a {
         ArrayList<Integer> arr3 = new ArrayList<>();
 
         for (int i = 0; i < l; i++) {
-            if (s[i].equals("1")) {
+            if (Integer.parseInt(s[i]) == 1) {
                 arr1.add(i + 1);
             }
 
-            if (s[i].equals("2")) {
+            if (Integer.parseInt(s[i]) == 2) {
                 arr2.add(i + 1);
             }
             
-            if (s[i].equals("3")) {
+            if (Integer.parseInt(s[i]) == 3) {
                 arr3.add(i + 1);
             }            
         }
-
-        int min = Math.min(arr1.size(), arr2.size());
-        min = Math.min(min, arr3.size());
+        int min = Math.min(Math.min(arr1.size(), arr2.size()), arr3.size());
         for (int i = 0; i < min; i++) {
             out.println(arr1.get(i) + " " + arr2.get(i) + " " + arr3.get(i));
         }
