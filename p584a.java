@@ -10,12 +10,18 @@ public class p584a {
         int s2 = Integer.parseInt(s[1]);
         if (s2 == 10) {
             if (s1 == 1) {
-                out.println(-1);
+                out.println(-1);    
             } else {
-                out.println((int) Math.pow(10, s1 - 1));
+                out.print(1);
+                for (int i = 0; i < s1 - 1; i++) {
+                    out.print(0);
+                }
             }
         } else {
-            out.println(s2 * (int) Math.pow(10, s1 - 1));
+            out.print(s2);
+                for (int i = 0; i < s1 - 1; i++) {
+                    out.print(0);
+                }
         }
         
         out.flush();
