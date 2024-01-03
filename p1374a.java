@@ -11,12 +11,9 @@ public class p1374a {
             int s1 = Integer.parseInt(s[0]);
             int s2 = Integer.parseInt(s[1]);
             int s3 = Integer.parseInt(s[2]);
-            for (int j = s3 - s2; j >= 0; j--) {
-                if (j % s1 == 0) {
-                    out.println(s2 + j);
-                    break;
-                }
-            }
+            int fin = s3 - s2;
+            int div = fin % s1;
+            out.println(fin - div + s2);
         }
         out.flush();
     }
