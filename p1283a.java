@@ -14,7 +14,9 @@ public class p1283a {
             org += (24 - s1 - 1) * 60;
             out.println(org);
         }
-
+        git add *.java
+        git commit -m 'adding new solution'
+        git push -u origin main
         out.flush();
     }
 }
