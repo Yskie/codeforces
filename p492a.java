@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class p492a {
     public static void main(String[] args) throws IOException {
@@ -9,7 +8,6 @@ public class p492a {
 
         int c = 0;
         int r = 0;
-        int prev = 0;
         int o = 0;
         while (o < l) {
             c++;

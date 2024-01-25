@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class p1374a {
     public static void main(String[] args) throws IOException {

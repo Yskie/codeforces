@@ -5,7 +5,7 @@ public class p758a {
     public static void main(String[] args) throws IOException {
         PrintWriter out = new PrintWriter(System.out);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int l = Integer.parseInt(br.readLine());
+        br.readLine();
         String[] s = br.readLine().split(" "); 
         int max = 0;
         PriorityQueue<Integer> pq = new PriorityQueue<>();

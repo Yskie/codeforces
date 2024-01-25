@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class p1512a {
     public static void main(String[] args) throws IOException {
@@ -11,7 +10,6 @@ public class p1512a {
             String[] s = br.readLine().split(" "); 
             String first = "0";
             String second = "0";
-            int firstInd = 0;
             int secondInd = 0;
             for (int j = 0; j < n; j++) {
                 String curr = s[j];
