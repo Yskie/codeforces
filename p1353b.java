@@ -16,7 +16,6 @@ public class p1353b {
             int[] i1 = new int[n];
             int[] i2 = new int[n];
             int c1 = 0;
-            int c2 = 0;
             for (int j = 0; j < n; j++) {
                 int num = Integer.parseInt(s1[j]);
                 i1[j] = num;
